@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1609577430 source:e:\c++\c++_thay_thang\onclass\managestudent\date.cpp
+	<iostream>
+	<Math.h>
+
+1610333777 source:e:\c++\c++_thay_thang\onclass\managestudent\main.cpp
+	<iostream>
+	"Date.h"
+
+1609577406 source:e:\c++\c++_thay_thang\onclass\managestudent\person.cpp
+
+1610333788 e:\c++\c++_thay_thang\onclass\managestudent\include\date.h
+	<iostream>
+
+1609587695 source:e:\c++\c++_thay_thang\onclass\managestudent\src\date.cpp
+
+1609586385 source:e:\c++\c++_thay_thang\onclass\managestudent\src\person.cpp
+	"Person.h"
+
+1610333751 e:\c++\c++_thay_thang\onclass\managestudent\include\person.h
+	<iostream>
+	<string>
+	<cstring>
+	<Date.h>
+
+1609776969 source:e:\c++\c++_thay_thang\onclass\managestudent\src\student.cpp
+
+1610333688 e:\c++\c++_thay_thang\onclass\managestudent\include\student.h
+	<Person.h>
+
+1609945105 source:e:\c++\c++_thay_thang\onclass\managestudent\src\teacher.cpp
+	"Teacher.h"
+
+1609947339 e:\c++\c++_thay_thang\onclass\managestudent\include\teacher.h
+	"Date.h"
+	<Person.h>
+

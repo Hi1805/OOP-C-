@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1607518155 source:e:\c++\c++_thay_thang\onclass\projectstudent\main.cpp
+	<iostream>
+	<Person.h>
+
+1607518591 e:\c++\c++_thay_thang\onclass\projectstudent\include\person.h
+	<string>
+
+1607518600 source:e:\c++\c++_thay_thang\onclass\projectstudent\src\person.cpp
+	"Person.h"
+	<string>
+

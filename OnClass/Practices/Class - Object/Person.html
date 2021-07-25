@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>E:\c++\C++_Thay_Thang\OnClass\ManageStudent\include\Person.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="Code::Blocks Exporter plugin" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+.style11 { color: #000000; background-color: #FFFFFF; }
+.style64 { color: #C8C8C8; }
+.style72 { color: #C8C8C8; }
+.style75 { color: #C8C8C8; }
+.style1 { color: #9898D9; }
+.style23 { color: #9898D9; }
+.style65 { color: #C0C0C0; }
+.style87 { color: #C0C0C0; }
+.style2 { color: #9898D9; }
+.style66 { color: #C0C0C0; }
+.style3 { color: #8080FF; font-weight: bold; }
+.style24 { color: #8080FF; font-weight: bold; }
+.style67 { color: #AAAAF0; font-weight: bold; }
+.style88 { color: #AAAAF0; font-weight: bold; }
+.style15 { color: #8080FF; font-weight: bold; }
+.style79 { color: #AAAAF0; font-weight: bold; }
+.style17 { color: #008080; }
+.style81 { color: #6B9999; }
+.style18 { color: #800000; }
+.style82 { color: #AC5959; }
+.style4 { color: #F000F0; }
+.style68 { color: #F0C8F0; }
+.style5 { color: #0000A0; font-weight: bold; }
+.style69 { color: #8787C8; font-weight: bold; }
+.style16 { color: #00A000; font-weight: bold; }
+.style80 { color: #9AC89A; font-weight: bold; }
+.style19 { color: #BE00BE; font-weight: bold; }
+.style83 { color: #BE89BE; font-weight: bold; }
+.style6 { color: #0000FF; }
+.style12 { color: #0000FF; }
+.style20 { color: #0000FF; }
+.style70 { color: #BEBEFF; }
+.style76 { color: #BEBEFF; }
+.style7 { color: #E0A000; }
+.style71 { color: #E0CE9F; }
+.style8 { color: #000000; }
+.style9 { color: #00A000; }
+.style73 { color: #84A084; }
+.style10 { color: #FF0000; }
+.style74 { color: #FFC8C8; }
+.style50 { color: #404080; font-style: italic; }
+.style114 { color: #8585AC; font-style: italic; }
+.style34 { color: #000000; background-color: #80FFFF; font-weight: bold; }
+.style35 { color: #FFFFFF; background-color: #FF0000; font-weight: bold; }
+.style37 { color: #373737; }
+--></style></head>
+<body>
+<pre>
+<code><span style="font: 8pt Courier New;"><span class="body">  1 </span><span class="style9">#ifndef PERSON_H</span>
+<span class="body">  2  </span><span class="style9">#define PERSON_H</span>
+<span class="body">  3  </span>
+<span class="body">  4  </span><span class="style9">#include&lt;iostream&gt;</span>
+<span class="body">  5  </span><span class="style9">#include&lt;string&gt;</span>
+<span class="body">  6  </span><span class="style9">#include&lt;cstring&gt;</span>
+<span class="body">  7  </span><span class="style9">#include&lt;Date.h&gt;</span>
+<span class="body">  8  </span><span class="style5">using namespace </span><span class="style16">std</span><span class="style10">;</span>
+<span class="body">  9  </span><span class="style5">class </span><span class="style11">Person</span>
+<span class="body"> 10  </span><span class="style10">{</span>
+<span class="body"> 11  </span><span class="style5">protected</span><span class="style10">:</span>
+<span class="body"> 12      </span><span class="style16">string </span><span class="style11">firstName</span><span class="style10">;</span>
+<span class="body"> 13      </span><span class="style16">string </span><span class="style11">lastName</span><span class="style10">;</span>
+<span class="body"> 14      </span><span class="style11">Date dob</span><span class="style10">;</span>
+<span class="body"> 15      </span><span class="style5">bool </span><span class="style11">gender</span><span class="style10">;</span>
+<span class="body"> 16      </span><span class="style5">int </span><span class="style11">age</span><span class="style10">;</span>
+<span class="body"> 17  </span><span class="style5">public</span><span class="style10">:</span>
+<span class="body"> 18      </span><span class="style11">Person</span><span class="style10">()</span>
+<span class="body"> 19      </span><span class="style10">{</span>
+<span class="body"> 20  </span>
+<span class="body"> 21      </span><span class="style10">}</span>
+<span class="body"> 22      </span><span class="style5">virtual void </span><span class="style11">input</span><span class="style10">()</span>
+<span class="body"> 23      </span><span class="style10">{</span>
+<span class="body"> 24          </span><span class="style5">do</span>
+<span class="body"> 25          </span><span class="style10">{</span>
+<span class="body"> 26              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Please Enter First Name "</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 27              </span><span class="style11">getline</span><span class="style10">( </span><span class="style16">cin</span><span class="style10">,</span><span class="style11">firstName</span><span class="style10">);</span>
+<span class="body"> 28          </span><span class="style10">}</span>
+<span class="body"> 29          </span><span class="style5">while</span><span class="style10">(!</span><span class="style11">isName</span><span class="style10">(</span><span class="style11">firstName</span><span class="style10">));</span>
+<span class="body"> 30  </span>
+<span class="body"> 31          </span><span class="style5">do</span>
+<span class="body"> 32          </span><span class="style10">{</span>
+<span class="body"> 33              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Please Enter Last Name "</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 34              </span><span class="style11">getline</span><span class="style10">( </span><span class="style16">cin</span><span class="style10">,</span><span class="style11">lastName</span><span class="style10">);</span>
+<span class="body"> 35          </span><span class="style10">}</span>
+<span class="body"> 36          </span><span class="style5">while</span><span class="style10">(!</span><span class="style11">isName</span><span class="style10">(</span><span class="style11">lastName</span><span class="style10">));</span>
+<span class="body"> 37          </span><span class="style5">this</span><span class="style10">-&gt;</span><span class="style11">firstName </span><span class="style10">= </span><span class="style11">format</span><span class="style10">(</span><span class="style5">this</span><span class="style10">-&gt;</span><span class="style11">firstName</span><span class="style10">);</span>
+<span class="body"> 38          </span><span class="style11">lastName </span><span class="style10">= </span><span class="style11">format</span><span class="style10">(</span><span class="style11">lastName</span><span class="style10">);</span>
+<span class="body"> 39          </span><span class="style5">int </span><span class="style11">choose </span><span class="style10">;</span>
+<span class="body"> 40          </span><span class="style5">do</span>
+<span class="body"> 41          </span><span class="style10">{</span>
+<span class="body"> 42              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Please Enter your gender : 1/male 0/female"</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 43              </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">choose</span><span class="style10">;</span>
+<span class="body"> 44          </span><span class="style10">}</span>
+<span class="body"> 45          </span><span class="style5">while</span><span class="style10">(</span><span class="style11">choose </span><span class="style10">!= </span><span class="style4">1 </span><span class="style10">&amp;&amp; </span><span class="style11">choose </span><span class="style10">!= </span><span class="style4">0</span><span class="style10">);</span>
+<span class="body"> 46          </span><span class="style11">gender </span><span class="style10">= </span><span class="style11">choose</span><span class="style10">;</span>
+<span class="body"> 47          </span><span class="style5">do</span>
+<span class="body"> 48          </span><span class="style10">{</span>
+<span class="body"> 49              </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Please Enter your age "</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 50              </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style5">this</span><span class="style10">-&gt;</span><span class="style11">age</span><span class="style10">;</span>
+<span class="body"> 51          </span><span class="style10">}</span>
+<span class="body"> 52          </span><span class="style5">while</span><span class="style10">(!</span><span class="style11">Setage</span><span class="style10">(</span><span class="style5">this</span><span class="style10">-&gt;</span><span class="style11">age</span><span class="style10">));</span>
+<span class="body"> 53          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Please Enter Day Of Birth " </span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 54          </span><span class="style11">dob</span><span class="style10">.</span><span class="style11">input</span><span class="style10">();</span>
+<span class="body"> 55      </span><span class="style10">}</span>
+<span class="body"> 56      </span><span class="style5">virtual void </span><span class="style11">display</span><span class="style10">()</span>
+<span class="body"> 57      </span><span class="style10">{</span>
+<span class="body"> 58          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"First Name :"</span><span class="style10">&lt;&lt;</span><span class="style5">this</span><span class="style10">-&gt;</span><span class="style11">firstName</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 59          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Last Name :"</span><span class="style10">&lt;&lt;</span><span class="style5">this</span><span class="style10">-&gt;</span><span class="style11">lastName</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 60          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Gender :"</span><span class="style10">&lt;&lt;(</span><span class="style11">gender </span><span class="style10">? </span><span class="style6">"male" </span><span class="style10">: </span><span class="style6">"female"</span><span class="style10">)&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 61          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Age :"</span><span class="style10">&lt;&lt;</span><span class="style11">age</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 62          </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Date Of Birth"</span><span class="style10">;</span>
+<span class="body"> 63          </span><span class="style11">dob</span><span class="style10">.</span><span class="style11">display</span><span class="style10">();</span>
+<span class="body"> 64      </span><span class="style10">};</span>
+<span class="body"> 65  </span>
+<span class="body"> 66  </span>
+<span class="body"> 67      </span><span class="style16">string </span><span class="style11">GetfirstName</span><span class="style10">()</span>
+<span class="body"> 68      </span><span class="style10">{</span>
+<span class="body"> 69          </span><span class="style5">return </span><span class="style11">firstName</span><span class="style10">;</span>
+<span class="body"> 70      </span><span class="style10">}</span>
+<span class="body"> 71      </span><span class="style5">void </span><span class="style11">SetfirstName</span><span class="style10">(</span><span class="style16">string </span><span class="style11">val</span><span class="style10">)</span>
+<span class="body"> 72      </span><span class="style10">{</span>
+<span class="body"> 73          </span><span class="style11">firstName </span><span class="style10">= </span><span class="style11">val</span><span class="style10">;</span>
+<span class="body"> 74      </span><span class="style10">}</span>
+<span class="body"> 75      </span><span class="style16">string </span><span class="style11">GetlastName</span><span class="style10">()</span>
+<span class="body"> 76      </span><span class="style10">{</span>
+<span class="body"> 77          </span><span class="style5">return </span><span class="style11">lastName</span><span class="style10">;</span>
+<span class="body"> 78      </span><span class="style10">}</span>
+<span class="body"> 79      </span><span class="style5">void </span><span class="style11">SetlastName</span><span class="style10">(</span><span class="style16">string </span><span class="style11">val</span><span class="style10">)</span>
+<span class="body"> 80      </span><span class="style10">{</span>
+<span class="body"> 81          </span><span class="style11">lastName </span><span class="style10">= </span><span class="style11">val</span><span class="style10">;</span>
+<span class="body"> 82      </span><span class="style10">}</span>
+<span class="body"> 83      </span><span class="style11">Date Getdob</span><span class="style10">()</span>
+<span class="body"> 84      </span><span class="style10">{</span>
+<span class="body"> 85          </span><span class="style5">return </span><span class="style11">dob</span><span class="style10">;</span>
+<span class="body"> 86      </span><span class="style10">}</span>
+<span class="body"> 87      </span><span class="style5">void </span><span class="style11">Setdob</span><span class="style10">(</span><span class="style11">Date val</span><span class="style10">)</span>
+<span class="body"> 88      </span><span class="style10">{</span>
+<span class="body"> 89          </span><span class="style11">dob </span><span class="style10">= </span><span class="style11">val</span><span class="style10">;</span>
+<span class="body"> 90      </span><span class="style10">}</span>
+<span class="body"> 91      </span><span class="style5">bool </span><span class="style11">Getgender</span><span class="style10">()</span>
+<span class="body"> 92      </span><span class="style10">{</span>
+<span class="body"> 93          </span><span class="style5">return </span><span class="style11">gender</span><span class="style10">;</span>
+<span class="body"> 94      </span><span class="style10">}</span>
+<span class="body"> 95      </span><span class="style5">void </span><span class="style11">Setgender</span><span class="style10">(</span><span class="style5">bool </span><span class="style11">val</span><span class="style10">)</span>
+<span class="body"> 96      </span><span class="style10">{</span>
+<span class="body"> 97          </span><span class="style11">gender </span><span class="style10">= </span><span class="style11">val</span><span class="style10">;</span>
+<span class="body"> 98      </span><span class="style10">}</span>
+<span class="body"> 99      </span><span class="style5">int </span><span class="style11">Getage</span><span class="style10">()</span>
+<span class="body">100      </span><span class="style10">{</span>
+<span class="body">101          </span><span class="style5">return </span><span class="style11">age</span><span class="style10">;</span>
+<span class="body">102      </span><span class="style10">}</span>
+<span class="body">103      </span><span class="style5">bool </span><span class="style11">Setage</span><span class="style10">(</span><span class="style5">int </span><span class="style11">val</span><span class="style10">)</span>
+<span class="body">104      </span><span class="style10">{</span>
+<span class="body">105          </span><span class="style5">if</span><span class="style10">(</span><span class="style11">val </span><span class="style10">&lt;= </span><span class="style4">0</span><span class="style10">)</span>
+<span class="body">106              </span><span class="style5">return false</span><span class="style10">;</span>
+<span class="body">107          </span><span class="style5">this</span><span class="style10">-&gt;</span><span class="style11">age </span><span class="style10">= </span><span class="style11">val</span><span class="style10">;</span>
+<span class="body">108          </span><span class="style5">return true</span><span class="style10">;</span>
+<span class="body">109      </span><span class="style10">}</span>
+<span class="body">110      </span><span class="style5">static  </span><span class="style16">string </span><span class="style11">lower</span><span class="style10">(</span><span class="style16">string </span><span class="style11">s</span><span class="style10">)</span>
+<span class="body">111      </span><span class="style10">{</span>
+<span class="body">112          </span><span class="style5">for</span><span class="style10">(</span><span class="style5">int </span><span class="style11">i </span><span class="style10">= </span><span class="style4">0 </span><span class="style10">; </span><span class="style11">i </span><span class="style10">&lt; </span><span class="style11">s</span><span class="style10">.</span><span class="style11">length</span><span class="style10">() ; </span><span class="style11">i</span><span class="style10">++)</span>
+<span class="body">113          </span><span class="style10">{</span>
+<span class="body">114              </span><span class="style5">if</span><span class="style10">( </span><span class="style7">'A' </span><span class="style10">&lt;= </span><span class="style11">s</span><span class="style10">[</span><span class="style11">i</span><span class="style10">] &amp;&amp; </span><span class="style11">s</span><span class="style10">[</span><span class="style11">i</span><span class="style10">] &lt;= </span><span class="style7">'Z'</span><span class="style10">)</span>
+<span class="body">115              </span><span class="style10">{</span>
+<span class="body">116                  </span><span class="style11">s</span><span class="style10">[</span><span class="style11">i</span><span class="style10">] = </span><span class="style11">s</span><span class="style10">[</span><span class="style11">i</span><span class="style10">] + </span><span class="style4">32</span><span class="style10">;</span>
+<span class="body">117              </span><span class="style10">}</span>
+<span class="body">118          </span><span class="style10">}</span>
+<span class="body">119      </span><span class="style10">}</span>
+<span class="body">120      </span><span class="style5">bool </span><span class="style11">isName</span><span class="style10">(</span><span class="style16">string </span><span class="style11">name</span><span class="style10">)</span>
+<span class="body">121      </span><span class="style10">{</span>
+<span class="body">122          </span><span class="style5">for </span><span class="style10">(</span><span class="style5">int </span><span class="style11">i </span><span class="style10">= </span><span class="style4">0</span><span class="style10">; </span><span class="style11">i </span><span class="style10">&lt; </span><span class="style11">name</span><span class="style10">.</span><span class="style11">length</span><span class="style10">(); </span><span class="style11">i</span><span class="style10">++)</span>
+<span class="body">123          </span><span class="style10">{</span>
+<span class="body">124              </span><span class="style5">if</span><span class="style10">(!</span><span class="style11">isalpha</span><span class="style10">(</span><span class="style11">name</span><span class="style10">[</span><span class="style4">0</span><span class="style10">]))</span>
+<span class="body">125                  </span><span class="style5">return false</span><span class="style10">;</span>
+<span class="body">126          </span><span class="style10">}</span>
+<span class="body">127          </span><span class="style5">return true</span><span class="style10">;</span>
+<span class="body">128      </span><span class="style10">}</span>
+<span class="body">129  </span>
+<span class="body">130      </span><span class="style16">string </span><span class="style11">format</span><span class="style10">(</span><span class="style16">string </span><span class="style11">fullname</span><span class="style10">)</span>
+<span class="body">131      </span><span class="style10">{</span>
+<span class="body">132          </span><span class="style16">string  </span><span class="style11">name </span><span class="style10">[</span><span class="style11">fullname</span><span class="style10">.</span><span class="style11">length</span><span class="style10">()] ;</span>
+<span class="body">133          </span><span class="style5">int </span><span class="style11">length </span><span class="style10">= </span><span class="style4">0</span><span class="style10">;</span>
+<span class="body">134          </span><span class="style5">int </span><span class="style16">begin  </span><span class="style10">= -</span><span class="style4">1</span><span class="style10">;</span>
+<span class="body">135          </span><span class="style5">int </span><span class="style16">end </span><span class="style10">= </span><span class="style4">0 </span><span class="style10">;</span>
+<span class="body">136          </span><span class="style5">for</span><span class="style10">(</span><span class="style5">int </span><span class="style11">i </span><span class="style10">= </span><span class="style4">0 </span><span class="style10">; </span><span class="style11">i </span><span class="style10">&lt; </span><span class="style11">fullname</span><span class="style10">.</span><span class="style11">length</span><span class="style10">(); </span><span class="style11">i</span><span class="style10">++ )</span>
+<span class="body">137          </span><span class="style10">{</span>
+<span class="body">138  </span>
+<span class="body">139              </span><span class="style5">if</span><span class="style10">(</span><span class="style11">isalpha</span><span class="style10">(</span><span class="style11">fullname</span><span class="style10">[</span><span class="style11">i</span><span class="style10">]) &amp;&amp; </span><span class="style16">begin </span><span class="style10">== -</span><span class="style4">1 </span><span class="style10">)</span>
+<span class="body">140              </span><span class="style10">{</span>
+<span class="body">141                  </span><span class="style16">begin </span><span class="style10">=</span><span class="style11">i</span><span class="style10">;</span>
+<span class="body">142              </span><span class="style10">}</span>
+<span class="body">143              </span><span class="style5">if</span><span class="style10">(</span><span class="style11">isalpha</span><span class="style10">(</span><span class="style11">fullname</span><span class="style10">[</span><span class="style11">i</span><span class="style10">]) &amp;&amp;( </span><span class="style11">isspace</span><span class="style10">(</span><span class="style11">fullname</span><span class="style10">[</span><span class="style11">i</span><span class="style10">+</span><span class="style4">1</span><span class="style10">]) || </span><span class="style11">i </span><span class="style10">== </span><span class="style11">fullname</span><span class="style10">.</span><span class="style11">length</span><span class="style10">() - </span><span class="style4">1</span><span class="style10">))</span>
+<span class="body">144              </span><span class="style10">{</span>
+<span class="body">145                  </span><span class="style16">end </span><span class="style10">= </span><span class="style11">i</span><span class="style10">;</span>
+<span class="body">146                  </span><span class="style16">string </span><span class="style11">s </span><span class="style10">= </span><span class="style6">""</span><span class="style10">;</span>
+<span class="body">147                  </span><span class="style11">s </span><span class="style10">= </span><span class="style11">fullname</span><span class="style10">.</span><span class="style16">substr</span><span class="style10">(</span><span class="style16">begin</span><span class="style10">,</span><span class="style16">end </span><span class="style10">- </span><span class="style16">begin </span><span class="style10">+ </span><span class="style4">1</span><span class="style10">);</span>
+<span class="body">148                  </span><span class="style11">s</span><span class="style10">[</span><span class="style4">0</span><span class="style10">] =  </span><span class="style11">islower</span><span class="style10">(</span><span class="style11">s</span><span class="style10">[</span><span class="style4">0</span><span class="style10">]) ? (</span><span class="style11">s</span><span class="style10">[</span><span class="style4">0</span><span class="style10">] - </span><span class="style4">32</span><span class="style10">): </span><span class="style11">s</span><span class="style10">[</span><span class="style4">0</span><span class="style10">];</span>
+<span class="body">149                  </span><span class="style5">for</span><span class="style10">(</span><span class="style5">int </span><span class="style11">i </span><span class="style10">= </span><span class="style4">1 </span><span class="style10">; </span><span class="style11">i </span><span class="style10">&lt; </span><span class="style11">s</span><span class="style10">.</span><span class="style11">length</span><span class="style10">(); </span><span class="style11">i</span><span class="style10">++ )</span>
+<span class="body">150                  </span><span class="style10">{</span>
+<span class="body">151                      </span><span class="style5">if</span><span class="style10">(</span><span class="style11">isupper</span><span class="style10">(</span><span class="style11">s</span><span class="style10">[</span><span class="style11">i</span><span class="style10">]))</span>
+<span class="body">152                          </span><span class="style11">s</span><span class="style10">[</span><span class="style11">i</span><span class="style10">] = </span><span class="style11">s</span><span class="style10">[</span><span class="style11">i</span><span class="style10">] + </span><span class="style4">32</span><span class="style10">;</span>
+<span class="body">153                  </span><span class="style10">}</span>
+<span class="body">154                  </span><span class="style11">name</span><span class="style10">[</span><span class="style11">length</span><span class="style10">] = </span><span class="style11">s</span><span class="style10">;</span>
+<span class="body">155                  </span><span class="style11">length </span><span class="style10">++ ;</span>
+<span class="body">156                  </span><span class="style16">begin </span><span class="style10">= -</span><span class="style4">1</span><span class="style10">;</span>
+<span class="body">157              </span><span class="style10">}</span>
+<span class="body">158          </span><span class="style10">}</span>
+<span class="body">159          </span><span class="style16">string </span><span class="style11">format </span><span class="style10">= </span><span class="style6">""</span><span class="style10">;</span>
+<span class="body">160          </span><span class="style5">for</span><span class="style10">(</span><span class="style5">int </span><span class="style11">i </span><span class="style10">= </span><span class="style4">0</span><span class="style10">; </span><span class="style11">i</span><span class="style10">&lt; </span><span class="style11">length</span><span class="style10">-</span><span class="style4">1 </span><span class="style10">; </span><span class="style11">i</span><span class="style10">++ )</span>
+<span class="body">161          </span><span class="style10">{</span>
+<span class="body">162              </span><span class="style11">format </span><span class="style10">+= </span><span class="style11">name</span><span class="style10">[</span><span class="style11">i</span><span class="style10">] + </span><span class="style6">" "</span><span class="style10">;</span>
+<span class="body">163          </span><span class="style10">}</span>
+<span class="body">164          </span><span class="style11">format </span><span class="style10">+= </span><span class="style11">name</span><span class="style10">[</span><span class="style11">length </span><span class="style10">- </span><span class="style4">1</span><span class="style10">];</span>
+<span class="body">165          </span><span class="style5">return </span><span class="style11">format</span><span class="style10">;</span>
+<span class="body">166      </span><span class="style10">}</span>
+<span class="body">167  </span>
+<span class="body">168  </span><span class="style10">};</span>
+<span class="body">169  </span>
+<span class="body">170  </span><span class="style9">#endif </span><span class="style2">// PERSON_H</span></span>
+</code></pre>
+</body>
+</html>
